@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<h1>Survey</h1>
+<p>If you have a moment, we'd appreciate it if you would fill out this<br>
+    survey.</p>
+
+<form action="survey" method="post">
+    <h2>Your information</h2>
+    <input type="hidden" name="action" value="add">
+
+    <label>Emailhihi:</label>
+    <input id="inputEmail" type="email" name="email" required><br>
+    <label>Last Name:</label>
+    <input id="inputLName" type="text" name="lastName" required><br>
+    <label>First Name:</label>
+    <input id="inputFName" type="text" name="firstName" required><br>
+
+    <h2>How did you hear about us?</h2>
+    <!-- radio button -->
+    <p>
+        <input type="radio" name="wayPeopleKnow" value="Search engine">Search engine
+        <input type="radio" name="wayPeopleKnow" value="Word of mouth">Word of mouth
+        <input type="radio" name="wayPeopleKnow" value="Other">Other
+    </p>
+
+    <h2>Would you like to receive announcements<br>
+        about new CDs and special offers?</h2>
+    <!-- check box -->
+    <p><input type="checkbox" name="isReceiveNotification" checked>
+        YES, I'd like that</p>
+
+    <p>Please contact me by:
+        <select name="contactType">
+            <option value="Email or postal mail" selected>Email or postal mail</option>
+            <option value="Phone">Phone</option>
+            <option value="Other">Other</option>
+        </select>
+    </p>
+
+    <input type="submit" value="Submit" id="submit">
+</form>
+</body>
+</html>
